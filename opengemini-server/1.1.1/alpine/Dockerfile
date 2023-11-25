@@ -5,9 +5,16 @@ RUN apk add --no-cache tzdata bash ca-certificates && \
     update-ca-certificates
 
 ENV OPENGEMINI_VERSION 1.1.1
-ENV OPENGEMINI_ARCH amd64
 
-RUN set -ex && \
+RUN OPENGEMINI_ARCH= && dpkgArch="$(arch)" && \
+    case "${dpkgArch##*-}" in \
+      x86_64) OPENGEMINI_ARCH='amd64';; \
+      amd64) OPENGEMINI_ARCH='amd64';; \
+      arm64) OPENGEMINI_ARCH='arm64';; \
+      aarch64) OPENGEMINI_ARCH='arm64';; \
+      *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;; \
+    esac && \
+    set -ex && \
     mkdir ~/.gnupg; \
     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf; \
     apk add --no-cache --virtual .build-deps wget tar && \

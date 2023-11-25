@@ -4,7 +4,8 @@
   [openGemini](https://github.com/openGemini/opengemini-docker)
 
 # Supported tags and respective Dockerfile links
-- [1.1.0, latest](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-cluster/1.1.0/Dockerfile)
+- [1.1.1, latest](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-cluster/1.1.1/Dockerfile)
+- [1.1.0](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-cluster/1.1.0/Dockerfile)
 
 # Quick reference (cont.)
 

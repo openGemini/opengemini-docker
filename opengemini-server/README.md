@@ -4,8 +4,11 @@
   [openGemini](https://github.com/openGemini/opengemini-docker)
 
 # Supported tags and respective Dockerfile links
-- [1.1.0-alpine](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-server/1.1.0/alpine/Dockerfile)
-- [1.1.0, latest](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-server/1.1.0/Dockerfile)
+- [1.1.1-alpine](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-server/1.1.1/alpine/Dockerfile)
+- [1.1.1, latest](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-server/1.1.1/Dockerfile)
+- [1.1.0-alpine](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-server/1.1.0/alpine/Dockerfile), [1.1.0](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-server/1.1.0/Dockerfile)
+- [1.0.1](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-server/1.0.1/alpine/Dockerfile)
+- [1.0.0](https://github.com/openGemini/opengemini-docker/blob/main/opengemini-server/1.0.0/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
